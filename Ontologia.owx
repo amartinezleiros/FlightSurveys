@@ -1,0 +1,939 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLuggage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMealService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValueForMoney"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#travelerType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesRunway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight_survey"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+            <Datatype abbreviatedIRI="xsd:token"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot"/>
+            <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom"/>
+            <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo"/>
+            <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft"/>
+            <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <ObjectMaxCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot"/>
+            <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom"/>
+        <Literal>Lavacolla (SCQ)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo"/>
+        <Literal>Barcelona-El prat (BCN)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1"/>
+        <Literal>Juan Jose Ramos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2"/>
+        <Literal>Yolanda Pérez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3"/>
+        <Literal>Josep Señe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+        <Literal>First time on 8022 and, although a nice aircraft and quieter than the 800, the seating is appalling. We were in row 26 and the pitch I measured at 27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot"/>
+        <Literal>Lorenzo Fraguela</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+        <Literal>Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">05/10/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+        <Literal>Ásel Martínez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1"/>
+        <Literal>Iker Losada</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComment"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLuggage"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMealService"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasValueForMoney"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#travelerType"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesRunway"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComment"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLuggage"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMealService"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasValueForMoney"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#travelerType"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesRunway"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+        <Class IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComment</IRI>
+        <Literal>Links comment class with the comment given by traveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasComment</IRI>
+        <Literal>hasComment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLuggage</IRI>
+        <Literal>Links traveller to his luggage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLuggage</IRI>
+        <Literal>hasLuggage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMealService</IRI>
+        <Literal>Links aircraft with meal service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMealService</IRI>
+        <Literal>hasMealService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>Links survey to price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>hasPrice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValueForMoney</IRI>
+        <Literal>Links survey with valueForMoney</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasValueForMoney</IRI>
+        <Literal>hasValueForMoney</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesRunway</IRI>
+        <Literal>Links the flight to a runway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesRunway</IRI>
+        <Literal>usesRunway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft</IRI>
+        <Literal>Type of aircraft used in the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft</IRI>
+        <Literal>Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline</IRI>
+        <Literal>Company which owns planes and offer services of flying to travelers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline</IRI>
+        <Literal>Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline</IRI>
+        <Literal>https://dbpedia.org/ontology/Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport</IRI>
+        <Literal>Place for lading, take off and parking of aircrafts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport</IRI>
+        <Literal>Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport</IRI>
+        <Literal>https://dbpedia.org/ontology/Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member</IRI>
+        <Literal>Person who assists passengers during the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member</IRI>
+        <Literal>Cabin crew member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment</IRI>
+        <Literal>Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment</IRI>
+        <Literal>Comment given by the passenger in the survey of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country</IRI>
+        <Literal>Nationality of the passenger who made the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country</IRI>
+        <Literal>https://dbpedia.org/ontology/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight</IRI>
+        <Literal>Details about the flight trip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight</IRI>
+        <Literal>Flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff</IRI>
+        <Literal>Persona que trabaja dentro del aeropuerto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff</IRI>
+        <Literal>Ground staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage</IRI>
+        <Literal>Items, equipment, things carried by the passenger in the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage</IRI>
+        <Literal>Luggage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service</IRI>
+        <Literal>Details about meal service offered during the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service</IRI>
+        <Literal>Meal Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic</IRI>
+        <Literal>Person who verifies and repairs the aircraft pre and post flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic</IRI>
+        <Literal>Mechanic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person</IRI>
+        <Literal>Working people related to the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person</IRI>
+        <Literal>Working staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot</IRI>
+        <Literal>Person who pilots the plane of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot</IRI>
+        <Literal>Pilot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price</IRI>
+        <Literal>Price paid for the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price</IRI>
+        <Literal>Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway</IRI>
+        <Literal>Place for taking off and landing planes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway</IRI>
+        <Literal>Runway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat</IRI>
+        <Literal>Type of seat chosen by the traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat</IRI>
+        <Literal>Seat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey</IRI>
+        <Literal>Review of a flight made by a passenger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey</IRI>
+        <Literal>Flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating</IRI>
+        <Literal>Value from 0 to 10 traveler rates the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating</IRI>
+        <Literal>Survey rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller</IRI>
+        <Literal>Person who is traveling and has written the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller</IRI>
+        <Literal>Traveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type</IRI>
+        <Literal>Traveler Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type</IRI>
+        <Literal>Type of traveler (Alone, familiar, business)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money</IRI>
+        <Literal>Rating of the flight&apos;s value for money (From 0 to 10)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money</IRI>
+        <Literal>Value for money</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline</IRI>
+        <Literal>Links survey to an airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline</IRI>
+        <Literal>belongsToAirline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom</IRI>
+        <Literal>Aiport where aircraft flies from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom</IRI>
+        <Literal>fliesFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo</IRI>
+        <Literal>Aiport where aircraft flies to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo</IRI>
+        <Literal>fliesTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate</IRI>
+        <Literal>Date when flight was done</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate</IRI>
+        <Literal>Flight date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating</IRI>
+        <Literal>Rating given by the traveler in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating</IRI>
+        <Literal>Flight rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft</IRI>
+        <Literal>Links flight with aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft</IRI>
+        <Literal>hasAircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot</IRI>
+        <Literal>Links flight with pilot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot</IRI>
+        <Literal>hasPilot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat</IRI>
+        <Literal>Links seat with aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat</IRI>
+        <Literal>hasSeat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler</IRI>
+        <Literal>Links survey with traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler</IRI>
+        <Literal>hasTraveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#name</IRI>
+        <Literal>Name of a person, airplane, airport, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#name</IRI>
+        <Literal>Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment</IRI>
+        <Literal>Description given by the traveler in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment</IRI>
+        <Literal>Survey comment</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
