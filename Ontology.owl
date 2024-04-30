@@ -1,0 +1,408 @@
+Prefix(:=<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology>
+
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>))
+Declaration(Class(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name>))
+Declaration(DataProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight_survey>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: rdfs:sameAs (rdfs:sameAs)
+
+SubAnnotationPropertyOf(rdfs:sameAs rdfs:seeAlso)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment> (hasComment)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment> "Links comment class with the comment given by traveller")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment> "hasComment")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage> (hasLuggage)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage> "Links traveller to his luggage")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage> "hasLuggage")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService> (hasMealService)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService> "Links aircraft with meal service")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService> "hasMealService")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice> (hasPrice)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice> "Links survey to price")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice> "hasPrice")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney> (hasValueForMoney)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney> "Links survey with valueForMoney")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney> "hasValueForMoney")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType> (<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType> DataSomeValuesFrom(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> owl:rational))
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway> (usesRunway)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway> "Links the flight to a runway")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway> "usesRunway")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> (belongsToAirline)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> "Links survey to an airline")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> "belongsToAirline")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> (fliesFrom)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> "Aiport where aircraft flies from")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> "fliesFrom")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> (fliesTo)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> "Aiport where aircraft flies to")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> "fliesTo")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> (hasAircraft)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> "Links flight with aircraft")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> "hasAircraft")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> (hasPilot)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> "Links flight with pilot")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> "hasPilot")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> (hasSeat)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> "Links seat with aircraft")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> "hasSeat")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat>)
+
+# Object Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> (hasTraveler)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> "Links survey with traveler")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> "hasTraveler")
+ObjectPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+ObjectPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> (Survey rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> "Value from 0 to 10 traveler rates the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> "Survey rating")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> (Traveler Type)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> "Traveler Type")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> "Type of traveler (Alone, familiar, business)")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> (Flight date)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> "Date when flight was done")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> "Flight date")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> xsd:dateTimeStamp)
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> (Flight rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> "Rating given by the traveler in the survey")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> "Flight rating")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> (Name)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Name of a person, airplane, airport, etc")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Name")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>)
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> (Survey comment)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> "Description given by the traveler in the survey")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> "Survey comment")
+DataPropertyDomain(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey>)
+DataPropertyRange(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> (Aircraft)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> "Type of aircraft used in the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> "Aircraft")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> (Airline)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> "Company which owns planes and offer services of flying to travelers")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> "Airline")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> "https://dbpedia.org/ontology/Airline")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> (Airport)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> "Place for lading, take off and parking of aircrafts")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> "Airport")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> "https://dbpedia.org/ontology/Airport")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> (Cabin crew member)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> "Person who assists passengers during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> "Cabin crew member")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person>)
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> "Comment")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> "Comment given by the passenger in the survey of the flight")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> DataExactCardinality(1 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> xsd:token))
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> (Country)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> "Nationality of the passenger who made the survey")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> "Country")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> "https://dbpedia.org/ontology/Country")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> (Flight)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> "Details about the flight trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> "Flight")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ObjectMinCardinality(1 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>))
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ObjectExactCardinality(1 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>))
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ObjectExactCardinality(1 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>))
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ObjectExactCardinality(1 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>))
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ObjectMaxCardinality(2 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>))
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> (Ground staff)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> "Persona que trabaja dentro del aeropuerto")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> "Ground staff")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person>)
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage> (Luggage)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage> "Items, equipment, things carried by the passenger in the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage> "Luggage")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service> (Meal Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service> "Details about meal service offered during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service> "Meal Service")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> (Mechanic)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> "Person who verifies and repairs the aircraft pre and post flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> "Mechanic")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person>)
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> (Working staff)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> "Working people related to the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> "Working staff")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> (Pilot)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> "Person who pilots the plane of the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> "Pilot")
+SubClassOf(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person>)
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price> (Price)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price> "Price paid for the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price> "Price")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway> (Runway)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway> "Place for taking off and landing planes")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway> "Runway")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat> (Seat)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat> "Type of seat chosen by the traveler")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat> "Seat")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> (Flight survey)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> "Review of a flight made by a passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> "Flight survey")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> (Traveller)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> "Person who is traveling and has written the survey")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> "Traveller")
+
+# Class: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money> (Value for money)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money> "Rating of the flight's value for money (From 0 to 10)")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money> "Value for money")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom> "Lavacolla (SCQ)")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo> "Barcelona-El prat (BCN)")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1> "Juan Jose Ramos")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2> "Yolanda Pérez")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3> "Josep Señe")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> "First time on 8022 and, although a nice aircraft and quieter than the 800, the seating is appalling. We were in row 26 and the pitch I measured at 27")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot> "Lorenzo Fraguela")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> (Country)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> "Spain")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> (Flight)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> "05/10/2021"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> "8"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> (Pilot)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> "Ásel Martínez")
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1>)
+
+# Individual: <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1> (<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1>)
+
+ClassAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1>)
+DataPropertyAssertion(<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1> "Iker Losada")
+
+
+)
