@@ -1,0 +1,444 @@
+@prefix : <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#> .
+
+<http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight_survey
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight_survey> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty ;
+            rdfs:subPropertyOf rdfs:seeAlso .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment
+:hasComment rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+            rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> ;
+            rdfs:comment "Links comment class with the comment given by traveller" ;
+            rdfs:label "hasComment" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage
+:hasLuggage rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+            rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage> ;
+            rdfs:comment "Links traveller to his luggage" ;
+            rdfs:label "hasLuggage" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService
+:hasMealService rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> ;
+                rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service> ;
+                rdfs:comment "Links aircraft with meal service" ;
+                rdfs:label "hasMealService" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice
+:hasPrice rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+          rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price> ;
+          rdfs:comment "Links survey to price" ;
+          rdfs:label "hasPrice" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney
+:hasValueForMoney rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                  rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money> ;
+                  rdfs:comment "Links survey with valueForMoney" ;
+                  rdfs:label "hasValueForMoney" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType
+:travelerType rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> ;
+                           owl:someValuesFrom owl:rational
+                         ] .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway
+:usesRunway rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+            rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway> ;
+            rdfs:comment "Links the flight to a runway" ;
+            rdfs:label "usesRunway" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                                                                             rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> ;
+                                                                             rdfs:comment "Links survey to an airline" ;
+                                                                             rdfs:label "belongsToAirline" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                      rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> ;
+                                                                      rdfs:comment "Aiport where aircraft flies from" ;
+                                                                      rdfs:label "fliesFrom" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                    rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> ;
+                                                                    rdfs:comment "Aiport where aircraft flies to" ;
+                                                                    rdfs:label "fliesTo" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                        rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> ;
+                                                                        rdfs:comment "Links flight with aircraft" ;
+                                                                        rdfs:label "hasAircraft" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                     rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> ;
+                                                                     rdfs:comment "Links flight with pilot" ;
+                                                                     rdfs:label "hasPilot" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> ;
+                                                                    rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat> ;
+                                                                    rdfs:comment "Links seat with aircraft" ;
+                                                                    rdfs:label "hasSeat" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                                                                        rdfs:range <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+                                                                        rdfs:comment "Links survey with traveler" ;
+                                                                        rdfs:label "hasTraveler" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                                                                          rdfs:range xsd:int ;
+                                                                          rdfs:comment "Value from 0 to 10 traveler rates the flight" ;
+                                                                          rdfs:label "Survey rating" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+                                                                           rdfs:range xsd:string ;
+                                                                           rdfs:label "Traveler Type" ,
+                                                                                      "Type of traveler (Alone, familiar, business)" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                       rdfs:range xsd:dateTimeStamp ;
+                                                                       rdfs:comment "Date when flight was done" ;
+                                                                       rdfs:label "Flight date" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                                                                         rdfs:range xsd:integer ;
+                                                                         rdfs:comment "Rating given by the traveler in the survey" ;
+                                                                         rdfs:label "Flight rating" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#name
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "Name of a person, airplane, airport, etc" ;
+                                                                 rdfs:label "Name" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> ;
+                                                                          rdfs:range xsd:string ;
+                                                                          rdfs:comment "Description given by the traveler in the survey" ;
+                                                                          rdfs:label "Survey comment" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft> rdf:type owl:Class ;
+                                                                     rdfs:comment "Type of aircraft used in the flight" ;
+                                                                     rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline> rdf:type owl:Class ;
+                                                                    rdfs:comment "Company which owns planes and offer services of flying to travelers" ;
+                                                                    rdfs:label "Airline" ;
+                                                                    rdfs:sameAs "https://dbpedia.org/ontology/Airline" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> rdf:type owl:Class ;
+                                                                    rdfs:comment "Place for lading, take off and parking of aircrafts" ;
+                                                                    rdfs:label "Airport" ;
+                                                                    rdfs:sameAs "https://dbpedia.org/ontology/Airport" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> ;
+                                                                              rdfs:comment "Person who assists passengers during the flight" ;
+                                                                              rdfs:label "Cabin crew member" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> ;
+                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onDataRange xsd:token
+                                                                                    ] .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> ;
+                                                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom> ;
+                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo> ;
+                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft> ;
+                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot> ;
+                                                                                     owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot>
+                                                                                   ] .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> ;
+                                                                         rdfs:comment "Persona que trabaja dentro del aeropuerto" ;
+                                                                         rdfs:label "Ground staff" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage> rdf:type owl:Class ;
+                                                                    rdfs:comment "Items, equipment, things carried by the passenger in the flight" ;
+                                                                    rdfs:label "Luggage" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service> rdf:type owl:Class ;
+                                                                         rdfs:comment "Details about meal service offered during the flight" ;
+                                                                         rdfs:label "Meal Service" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> ;
+                                                                     rdfs:comment "Person who verifies and repairs the aircraft pre and post flight" ;
+                                                                     rdfs:label "Mechanic" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> rdf:type owl:Class ;
+                                                                   rdfs:comment "Working people related to the flight" ;
+                                                                   rdfs:label "Working staff" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person> .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price> rdf:type owl:Class ;
+                                                                  rdfs:comment "Price paid for the flight" ;
+                                                                  rdfs:label "Price" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway> rdf:type owl:Class ;
+                                                                   rdfs:comment "Place for taking off and landing planes" ;
+                                                                   rdfs:label "Runway" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat> rdf:type owl:Class ;
+                                                                 rdfs:comment "Type of seat chosen by the traveler" ;
+                                                                 rdfs:label "Seat" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> rdf:type owl:Class ;
+                                                                   rdfs:comment "Review of a flight made by a passenger" ;
+                                                                   rdfs:label "Flight survey" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> rdf:type owl:Class ;
+                                                                      rdfs:comment "Person who is traveling and has written the survey" ;
+                                                                      rdfs:label "Traveller" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money> rdf:type owl:Class ;
+                                                                            rdfs:comment "Rating of the flight's value for money (From 0 to 10)" ;
+                                                                            rdfs:label "Value for money" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> ;
+                                                                        <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Lavacolla (SCQ)" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport> ;
+                                                                      <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Barcelona-El prat (BCN)" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> ;
+                                                                         <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Juan Jose Ramos" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> ;
+                                                                         <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Yolanda Pérez" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member> ;
+                                                                         <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Josep Señe" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> ;
+                                                                    <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> "First time on 8022 and, although a nice aircraft and quieter than the 800, the seating is appalling. We were in row 26 and the pitch I measured at 27" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> ;
+                                                                    <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Lorenzo Fraguela" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> ;
+                                                                    <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Spain" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> ;
+                                                                   <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate> "05/10/2021"^^xsd:dateTime ;
+                                                                   <http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating> 8 .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> ;
+                                                                  <http://www.semanticweb.org/aseli/ontologies/2024/3/school#name> "Ásel Martínez" .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey> .
+
+
+###  http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller> ;
+                                                                       <http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment> "Iker Losada" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment> rdfs:comment "Comment" ,
+                                                                                 "Comment given by the passenger in the survey of the flight" .
+
+
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country> rdfs:comment "Nationality of the passenger who made the survey" ;
+                                                                    rdfs:label "Country" ;
+                                                                    rdfs:sameAs "https://dbpedia.org/ontology/Country" .
+
+
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight> rdfs:comment "Details about the flight trip" ;
+                                                                   rdfs:label "Flight" .
+
+
+<http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot> rdfs:comment "Person who pilots the plane of the flight" ;
+                                                                  rdfs:label "Pilot" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

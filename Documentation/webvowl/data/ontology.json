@@ -1,0 +1,886 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology", "http://www.semanticweb.org/aseli/ontologies/2024/3/school" ],
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Person",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Working staff"
+    },
+    "subClasses" : [ "4", "5", "6", "7" ],
+    "comment" : {
+      "undefined" : "Working people related to the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Survey",
+      "undefined" : "Flight survey"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey1",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "Survey1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Review of a flight made by a passenger"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Country",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 1,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Country",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "comment" : {
+      "undefined" : "Nationality of the passenger who made the survey"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Ground_staff",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ground_staff",
+      "undefined" : "Ground staff"
+    },
+    "comment" : {
+      "undefined" : "Persona que trabaja dentro del aeropuerto"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Mechanic",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mechanic",
+      "undefined" : "Mechanic"
+    },
+    "comment" : {
+      "undefined" : "Person who verifies and repairs the aircraft pre and post flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "34",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Luggage",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Luggage",
+      "undefined" : "Luggage"
+    },
+    "comment" : {
+      "undefined" : "Items, equipment, things carried by the passenger in the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "5", "28", "6", "9", "13", "7", "11", "21" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Comment",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Comment"
+    },
+    "comment" : {
+      "undefined" : "Comment given by the passenger in the survey of the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Value_for_money",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Value_for_money",
+      "undefined" : "Value for money"
+    },
+    "comment" : {
+      "undefined" : "Rating of the flight's value for money (From 0 to 10)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "comment" : {
+      "undefined" : "Type of aircraft used in the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Meal_Service",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meal_Service",
+      "undefined" : "Meal Service"
+    },
+    "comment" : {
+      "undefined" : "Details about meal service offered during the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airline",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Airline",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airline",
+      "undefined" : "Airline"
+    },
+    "comment" : {
+      "undefined" : "Company which owns planes and offer services of flying to travelers"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Seat",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat",
+      "undefined" : "Seat"
+    },
+    "comment" : {
+      "undefined" : "Type of seat chosen by the traveler"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Price",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Price",
+      "undefined" : "Price"
+    },
+    "comment" : {
+      "undefined" : "Price paid for the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Airport",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Airport",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airport",
+      "undefined" : "Airport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportTo",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "AirportTo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#AirportFrom",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "AirportFrom"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Place for lading, take off and parking of aircrafts"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Flight",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "comment" : {
+      "undefined" : "Details about the flight trip"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Cabin_crew_member",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cabin_crew_member",
+      "undefined" : "Cabin crew member"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember1",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "CabinMember1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember3",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "CabinMember3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#CabinMember2",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "CabinMember2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Person who assists passengers during the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Pilot",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Pilot",
+      "undefined" : "Pilot"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Copilot",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "Copilot"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Person who pilots the plane of the flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Traveller",
+      "undefined" : "Traveller"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller1",
+      "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+      "labels" : {
+        "IRI-based" : "Traveller1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Person who is traveling and has written the survey"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Runway",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Runway",
+      "undefined" : "Runway"
+    },
+    "comment" : {
+      "undefined" : "Place for taking off and landing planes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "44",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "45",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "46",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightDate",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "flightDate",
+      "undefined" : "Flight date"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Date when flight was done"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesTo",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "fliesTo",
+      "undefined" : "fliesTo"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Aiport where aircraft flies to"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasSeat",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasSeat",
+      "undefined" : "hasSeat"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Links seat with aircraft"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasPilot",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasPilot",
+      "undefined" : "hasPilot"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links flight with pilot"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#fliesFrom",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "fliesFrom",
+      "undefined" : "fliesFrom"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Aiport where aircraft flies from"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Survey_rating",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "Survey_rating",
+      "undefined" : "Survey rating"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Value from 0 to 10 traveler rates the flight"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasAircraft",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasAircraft",
+      "undefined" : "hasAircraft"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links flight with aircraft"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#Traveller_Type",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "Traveller_Type",
+      "undefined" : "Type of traveler (Alone, familiar, business)"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasValueForMoney",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasValueForMoney",
+      "undefined" : "hasValueForMoney"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Links survey with valueForMoney"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#flightRating",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "flightRating",
+      "undefined" : "Flight rating"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Rating given by the traveler in the survey"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#belongsToAirline",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "belongsToAirline",
+      "undefined" : "belongsToAirline"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Links survey to an airline"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasMealService",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasMealService",
+      "undefined" : "hasMealService"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Links aircraft with meal service"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasComment",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasComment",
+      "undefined" : "hasComment"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Links comment class with the comment given by traveller"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#travelerType",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "travelerType"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "domain" : "38",
+    "range" : "38",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "6",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "11",
+    "range" : "11",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "7",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "1",
+    "range" : "1",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "8",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "7",
+    "range" : "7",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "9",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#hasTraveler",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasTraveler",
+      "undefined" : "hasTraveler"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Links survey with traveler"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasPrice",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasPrice",
+      "undefined" : "hasPrice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links survey to price"
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#usesRunway",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "usesRunway",
+      "undefined" : "usesRunway"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links the flight to a runway"
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#name",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "Name"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Name of a person, airplane, airport, etc"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school#surveyComment",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/school",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "surveyComment",
+      "undefined" : "Survey comment"
+    },
+    "cardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Description given by the traveler in the survey"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology#hasLuggage",
+    "baseIri" : "http://www.semanticweb.org/aseli/ontologies/2024/3/Flight_satisfaction_surveys_ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasLuggage",
+      "undefined" : "hasLuggage"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Links traveller to his luggage"
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  } ]
+}
